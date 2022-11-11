@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Links & Buttons</title>
+  <link href="Resources/Styling/Universal%20Documentation.css" rel = 'stylesheet'>
+  <link href="Resources/Styling/stylesheet.css" type="text/css" charset="utf-8"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+  <div id="navBar">
+    <img src="Resources/Images/logoMobile.png">
+    <a href="index.html">Home</a>
+    <a href="index.html">Refrences</a>
+    <a href="index.html">Contacts</a>
+  </div>
+</nav>
+<main>
+
+  <!--Page title-->
+  <div id="topics">
+    <!--In page buttons-->
+    <a class="class" href="SelectorAndVisualRules.html">Selectors</a>
+    <a class="class" href="Typography.html">Typography</a>
+  </div>
+  <h2 class = "center"><span>
+{/Links & Buttons} </span></h2>
+
+
+  <div id="selectors" class="shift">
+    <table >
+      <!--      <thead>-->
+      <!--      <tr>-->
+      <!--        <th colspan="3">  &lt;!&ndash;Main header&ndash;&gt;-->
+      <!--Selectors-->
+      <!--        </th>-->
+      <!--      </tr>-->
+      <!--      </thead>-->
+
+      <tbody>
+      <tr>
+        <th class="pink"> <!--Column Header 1-->
+          Item
+        </th>
+        <th class="pink" colspan="3"> <!--Column Header 1-->
+          Description
+        </th>
+        <th class="pink"> <!--Column Header 1-->
+          Possible values
+        </th>
+        <th class="pink" colspan="2"> <!--Column Header 1-->
+          Demo
+        </th>
+      </tr>
+      <tr>
+        <th> <!--Item name-->
+          Link status
+          <span class ="css">css</span>
+        </th>
+        <td colspan="3"><!--Description-->
+          In a browser, links have four states, each should be styled in a way that sets it apart from surrounding text
+        </td>
+        <td> <!--Item name-->
+          <ul>
+            <li>Hover</li><br>
+            <li>Active (clicked)</li><br>
+            <li>Visited</li><br>
+            <li>Nothing means-> Normal</li>
+          </ul>
+        </td>
+        <td colspan="2"><!--Demo-->
+          <pre>
+//normal
+<span>a{
+  color: blue;
+  }
+</span>
+//Clicked
+  <span>
+a:active
+  {
+  color: red;
+}</span>
+</pre>
+        </td>
+      </tr>
+
+
+      <tr>
+        <th> <!--Item name-->
+          Title attribute
+          <span class ="html">html</span>
+        </th>
+        <td colspan="3"><!--Description-->
+          Provides additional info to any element when hovered over.
+          <br><br>
+          <span class="hightlight">Adding it to a parent container automatically adds it to child elements</span>
+        </td>
+        <td> <!--Item name-->
+          <ul>
+            <li>Any text</li><br>
+          </ul>
+        </td>
+        <td colspan="2"><!--Demo-->
+          <span>
+&ltdiv title="Additional info wohoooo"&gt<br><br>
+    &ltp >Hover over me!&lt/p&gt<br><br>
+&lt/div&gt
+</span>
+          <div title="Additional info wohoooo" style="background-color: rgba(255,255,255, 0.2)">
+            <p>Hover over me!</p>
+          </div>
+        </td>
+      </tr>
+  <tr>
+    <th> <!--Item name-->
+      Tooltip<br><br>
+      <span class ="html">html</span><br> &<br>
+      <span class ="css">css</span>
+    </th>
+    <td colspan="3"><!--Description-->
+      Is a descriptive box which contains text that appears when u hover over element
+      <br><br>
+      <span class="hightlight">The "title" text is an example of tooltip, but u could implement ur own tooltip</span>
+    </td>
+    <td>
+*Any text
+    </td>
+    <td colspan="2"> <!--Item name--> <br></span> <span style="color: darkgray; background-color: transparent">//tooltip is the element, toolTipText is the disappearing text</span>
+<br><br>
+      <span style="margin: 0; padding: 0; font-size: 0.8em">
+        .tooltip .tooltiptext {<br>
+        visibility: hidden;
+        <br>}<br><br>
+        .tooltip:hover .tooltiptext {<br>
+        visibility: visible;
+        <br>}
+      </span>
+      <p style="width: 80%" class="toolTip js">
+        ToolTip (TRY ME)
+        <br>
+        <span style="font-size: 0.7em" class="toolTipText hightlight">Custom additional information!!</span>
+      </p>
+    </td>
+  </tr>
+      </tr>
+      <tr>
+        <th> <!--Item name-->
+          Cursor:<br>
+          <span class ="css">css</span>
+        </th>
+        <td colspan="3"><!--Description-->
+          The css CURSOR property is used to set the appearasnce of the cursor when hovering over element
+        </td>
+        <td> <!--Item name-->
+          <ul>
+            <li>help</li><br>
+            <li>wait</li><br>
+            <li>crosshair</li><br>
+            <li>not-allowed</li><br>
+            <li>zoom-in</li><br>
+            <li>zoom-out</li><br>
+            <li>grab</li><br>
+            <li>move</li>
+          </ul>
+        </td>
+        <td colspan="2"><!--Demo-->
+          <p style="padding: 0; text-align: center">Put your cursor ↴</p>
+          <div style="cursor: help; text-align: center; border-radius: 0.4em; border: lightgray 2px solid; background-color: rgba(255,255,255, 0.2)">cursor: help;</div><br>
+          <div style="cursor: wait; text-align: center; border-radius: 0.4em; border: lightgray 2px solid; background-color: rgba(255,255,255, 0.2)">cursor: wait;</div><br>
+          <div style="cursor: crosshair; text-align: center; border-radius: 0.4em; border: lightgray 2px solid; background-color: rgba(255,255,255, 0.2)">cursor: crosshair;</div><br>
+          <div style="cursor: not-allowed; text-align: center; border-radius: 0.4em; border: lightgray 2px solid; background-color: rgba(255,255,255, 0.2)">cursor: not-allowed;</div><br>
+          <div style="cursor: zoom-in; text-align: center; border-radius: 0.4em; border: lightgray 2px solid; background-color: rgba(255,255,255, 0.2)">cursor: zoom-in;</div><br>
+          <div style="cursor: grab; text-align: center; border-radius: 0.4em; border: lightgray 2px solid; background-color: rgba(255,255,255, 0.2)">cursor: grab;</div><br>
+          <div style="cursor: move; text-align: center; border-radius: 0.4em; border: lightgray 2px solid; background-color: rgba(255,255,255, 0.2)">cursor: move;</div>
+        </td>
+      </tr>
+
+  </tbody>
+  </table>
+  </div>
+
+</main>
+</body>
+</html>

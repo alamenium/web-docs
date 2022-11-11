@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html Documentation</title>
+  <link href="Resources/Styling/Universal%20Documentation.css" rel = 'stylesheet'>
+  <link href="Resources/Styling/stylesheet.css" type="text/css" charset="utf-8"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <div id="navBar">
+        <img src="Resources/Images/logoMobile.png">
+        <a href="index.html">Home</a>
+        <a href="index.html">Refrences</a>
+        <a href="index.html">Contacts</a>
+    </div>
+</nav>
+<main>
+    <h1 class = "center"><span>{/Html}</span></h1>
+    <p class="center">HTML (HyperText Markup Language) is used to give content to a web page and instructs web browsers on how to structure that content</p>
+    <div id="topics">
+        <a class="class" href="#main">Main tags</a>
+        <a class="class" href="#text">Text tags</a>
+        <a class="class" href="#list">List tags</a>
+        <a class="class" href="#media">Media tags</a>
+        <a class="class" href="#table">Table tags</a>
+        <a class="class" href="#attributes">Attributes</a>
+    </div>
+
+
+<div id="main" class="shift">
+    <table  class="tags">
+        <thead>
+        <tr>
+            <th colspan="3">Main Html Tag</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <th class="pink">
+                Tag
+            </th>
+            <th class="pink" colspan="2">
+                Description
+            </th>
+        </tr>
+        <tr>
+            <th>
+                !DOCTYPE html
+            </th>
+            <td colspan="2">
+                Tells the browser the type of document!
+            </td>
+        </tr>
+        <tr>
+            <th>
+                !-- and closing --
+            </th>
+            <td colspan="2">
+                Content inside of it will be commented out!
+            </td>
+        </tr>
+        <tr>
+            <th>
+                html
+            </th>
+            <td colspan="2">
+                Defines the document as html
+            </td>
+        </tr>
+        <tr>
+            <th>
+                 head
+            </th>
+            <td colspan="2">
+                contains general info about the html page
+            </td>
+        </tr>
+        <tr>
+            <th>
+                title
+            </th>
+            <td colspan="2">
+                The title displayed in the browser's tab
+            </td>
+        </tr>
+        <tr>
+            <th>
+                link
+            </th>
+            <td colspan="2">
+                uses- href: to specify URL, rel: to specify relationship, type: to specify content type
+            </td>
+        </tr>
+        <tr>
+            <th>
+                body
+            </th>
+            <td colspan="2">
+                represents the content of the web page
+            </td>
+        </tr>
+        <tr>
+            <th>
+nav
+            </th>
+            <td colspan="2">
+encapsulates the pages main navigation links
+            </td>
+        </tr>
+        <tr>
+            <th>
+main
+            </th>
+            <td colspan="2">
+encapsulates the pages main section
+            </td>
+        </tr>
+        <tr>
+            <th>
+                div
+            </th>
+            <td colspan="2">
+                a container that divides the html document into sections
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                a
+            </th>
+            <td colspan="2">
+                used to create hyperlinks in html document
+            </td>
+        </tr>
+        <tr>
+            <th>
+section
+            </th>
+            <td colspan="2">
+defines elements such as chapters, headings or any other area with same theme
+            </td>
+        </tr>
+        <tr>
+            <th>
+aside
+            </th>
+            <td colspan="2">
+additional info that enhances another element but isn't needed
+            </td>
+        </tr>
+        <tr>
+            <th>
+                footer
+            </th>
+            <td colspan="2">
+                has contacts, copywrite info and sources
+            </td>
+        </tr>
+        </tbody>
+</table>
+</div>
+
+    <!--#########################################################################################################-->
+<div id="text" class="shift">
+    <table class="tags">
+        <thead>
+        <tr>
+            <th colspan="3">Text tags</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <tr>
+            <th>
+                h1&gt - &lth6
+            </th>
+            <td colspan="2">
+                Provides 6 different levels of heading elements
+            </td>
+        </tr>
+        <tr>
+            <th>
+                p
+            </th>
+            <td colspan="2">
+                Paragraph element which contains and displays a block of text
+            </td>
+        </tr>
+
+
+        <tr>
+            <th>
+                br
+            </th>
+            <td colspan="2">
+                will breate a line break (has NO closing tag)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                em
+            </th>
+            <td colspan="2">
+                <em>emphasizes</em> text (most web browsers italicize it)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                strong
+            </th>
+            <td colspan="2">
+                browsers will render it in <strong>bold</strong> by default
+            </td>
+        </tr>
+        <tr>
+            <th>
+                span
+            </th>
+            <td colspan="2">
+                Creates inline text, used to add styling to specific text within the same line
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+    <!--#########################################################################################################-->
+<div  id="list" class="shift">
+    <table class="tags">
+        <thead>
+        <tr>
+            <th colspan="3">List element tags</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <tr>
+            <th>
+                ol
+            </th>
+            <td colspan="2">
+                creates an ordered list (numbered)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                ul
+            </th>
+            <td colspan="2">
+                creates an unordered list (no numbers)
+            </td>
+        </tr>
+        <tr>
+            <th>
+                li
+            </th>
+            <td colspan="2">
+                creates a list element (put inside ol / ul)
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+    <!--#########################################################################################################-->
+<div id= "media" class="shift">
+    <table class="tags">
+        <thead>
+        <tr>
+            <th colspan="3">Media tags</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <tr>
+            <th>
+                video
+            </th>
+            <td colspan="2">
+                Example: <span class="code">&ltvideo src="text.mp4" controls&gt Video not supported &lt/video&gt</span> <br><br>
+                the <span class="code">controls</span> atrribute tells the browser to add controls
+                <br><br>
+                the text between the brackets is displayed if the video couldn't load!
+
+            </td>
+        </tr>
+        <tr>
+            <th>
+                img
+            </th>
+            <td colspan="2">
+                Example: <span class="code">&ltimg src="image.jpg" &lt/img&gt</span> <br><br>
+
+                The <span class="code">img</span> attribute is an empty attibute, meaning it doesnt need a closing tag!
+
+            </td>
+        </tr>
+        <tr>
+            <th>
+                audio
+            </th>
+            <td colspan="2">
+                Example: <br>
+
+                <span class ='code'>
+                    <span class="hightlight">&ltaudio</span> src="sfx.mp3" controls loop<span class="hightlight">&gt</span> <br>
+                &lta href = "fallback.mp3"&gt Download Audio &lt/a&gt
+                    <br><span class="hightlight">&lt/audio&gt</span>
+                </span>
+                <br><br>
+                The anchor inside the audio tag is a fallback link in case the audioPlayer couldnt load
+            </td>
+        </tr>
+        <tr>
+            <th>
+                embed
+            </th>
+            <td colspan="2">
+            Can be used to implement any type of media, and its a <span class="hightlight">self closing tag!</span>
+                <br>Example:<br>
+                <span class="code">&ltembed src="media.gif"/&gt</span>
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                figure
+            </th>
+            <td colspan="2">
+                Encapsulates media such as images, videos, audio files
+            </td>
+        </tr>
+        <tr>
+            <th>
+                figurecaption
+            </th>
+            <td colspan="2">
+                used to describe the media inside the <span class="code">figure</span> element
+            </td>
+        </tr>
+
+
+        </tbody>
+    </table>
+</div>
+
+    <!--#########################################################################################################-->
+    <div id="table" class="shift">
+    <table class="tags">
+        <thead>
+        <tr>
+            <th colspan="3">Table Tags</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <tr>
+            <th>
+table
+            </th>
+            <td colspan="2">
+creates the main table element which will encapsulate the cells
+            </td>
+        </tr>
+        <tr>
+            <th>
+thead
+            </th>
+            <td colspan="2">
+defines the headings of table columns encapsulated in table rows
+            </td>
+        </tr>
+        <tr>
+            <th>
+tbody
+            </th>
+            <td colspan="2">
+Contains all the table data other than the heading and the footer
+            </td>
+        </tr>
+        <tr>
+            <th>
+tfoot
+            </th>
+            <td colspan="2">
+used to summarize table content at the end of the table
+            </td>
+        </tr>
+        <tr>
+            <th>
+tr
+            </th>
+            <td colspan="2">
+used to add rows to the table, is nested inside &ltthead&gt, &lttbody&gt or &lttfoot&gt
+            </td>
+        </tr>
+        <tr>
+            <th>
+                th
+            </th>
+            <td colspan="2">
+                nested inside the &lttr&gt element and used to create a cell that will be the head of a group of cells <span class = "hightlight">(can be a title for rows or columns)</span>
+            </td>
+        </tr>
+        <tr>
+            <th>
+td
+            </th>
+            <td colspan="2">
+can be nested inside the table row element to add a cell of data
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+    </div>
+
+    <!--#########################################################################################################-->
+
+    <div id="attributes" class="shift">
+    <table>
+        <thead>
+        <tr>
+            <th colspan="3">Main Attributes</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <tr>
+            <th>
+                class
+            </th>
+            <td colspan="2">
+                used to group alot of elements together to apply styling
+            </td>
+        </tr>
+
+
+        <tr>
+            <th>
+                id
+            </th>
+            <td colspan="2">
+                used to give styling to a specific element
+            </td>
+        </tr>
+
+
+        <tr>
+            <th>
+                alt
+            </th>
+            <td colspan="2">
+                Provides alternative text for <span class="code">&ltimg&gt</span> in case the browser fails to render the image.
+            </td>
+        </tr>
+        <tr>
+            <th>
+                target
+            </th>
+            <td colspan="2">
+                Used in anchor element <span class="code">&lta&gt</span> to specify where the browser should open the link
+                <br>Example:<br> <span class="code">target ="_blank"</span> will open the link in a new tab!
+            </td>
+        </tr>
+        <tr>
+            <th>
+rowspan
+            </th>
+            <td colspan="2">
+used to specify how many rows (height) a single cell should take in a table
+            </td>
+        </tr>
+        <tr>
+            <th>
+colspan
+            </th>
+            <td colspan="2">
+                used to specify how many columns (width) a single cell should take in a table
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Links & Buttons</title>
+  <link href="Resources/Styling/Universal%20Documentation.css" rel = 'stylesheet'>
+  <link href="Resources/Styling/stylesheet.css" type="text/css" charset="utf-8"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+  <div id="navBar">
+    <img src="Resources/Images/logoMobile.png">
+    <a href="index.html">Home</a>
+    <a href="index.html">Refrences</a>
+    <a href="index.html">Contacts</a>
+  </div>
+</nav>
+
+<main>
+
+  <!--Page title-->
+  <div id="topics">
+    <!--In page buttons-->
+    <a class="class" href="SelectorAndVisualRules.html">Selectors</a>
+    <a class="class" href="Typography.html">Typography</a>
+  </div>
+  <h2 class = "center"><span>
+{/Grids} </span></h2>
+
+
+  <div id="selectors" class="shift">
+    <table>
+
+      <tbody>
+      <tr>
+        <th class="pink"  colspan="1"> <!--Column Header 1-->
+          Property
+        </th>
+        <th class="pink" colspan="1"> <!--Column Header 1-->
+          Description
+        </th>
+        <th class="pink" colspan="2"> <!--Column Header 1-->
+          Possible values
+        </th>
+        <th class="pink" colspan="2"> <!--Column Header 1-->
+          Demo
+        </th>
+      </tr>
+      <tr>
+        <th colspan="1"> <!--Item name-->
+          Display
+        </th>
+        <td colspan="1"><!--Code-->
+          Sets the parent element as grid contrainer
+        <td colspan="2"><!--values-->
+          <ul>
+            <li>Display: Grid;</li>
+          </ul>
+        </td>
+        <td colspan="2" style="text-align: center"><!--values-->
+          na
+        </td>
+
+      </tr>
+
+      <tr>
+        <th colspan="1"> <!--Item name-->
+          grid-template-columns
+        </th>
+        <td colspan="1"><!--Code-->
+          Specifies the number of columns in the grid and their widths
+        <td colspan="2"><!--values-->
+          <ul>
+            <li>Multiple numbers separated by space, can be either in px or percentages</li><br>
+            <li>Using the fr Unit which splits the columns proportionally according to the distance left</li>
+          </ul>
+        </td>
+        <td colspan="2" style="text-align: center"><!--values-->
+          <span>grid-template-columns: 40px 40px 55%;</span><br><br>
+          <div style="display: grid; grid-template-columns: 40px 40px 55%; grid-template-rows: 5em; border:rgba(255,255,255,0.5) dashed 3px;  background-color: rgba(255,255,255,0.1); grid-gap: 1em">
+            <div style="background-color: blue; font-size: 16px; line-height: 5em; text-align: center">40px</div>
+            <div style="background-color: blue;font-size: 16px; line-height: 5em; text-align: center">40px</div>
+            <div style="background-color: blue;font-size: 16px; line-height: 5em; text-align: center">55%</div>
+          </div><br><br>
+          <span>grid-template-columns: 1fr 60px 2fr;</span><br><br>
+  <div style="display: grid; grid-template-columns: 1fr 60px 2fr; grid-template-rows: 5em; border:rgba(255,255,255,0.5) dashed 3px;  background-color: rgba(255,255,255,0.1); grid-gap: 1em">
+    <div style="background-color: blue; font-size: 16px; line-height: 5em; text-align: center;">1fr</div>
+    <div style="background-color: blue;font-size: 16px; line-height: 5em; text-align: center">60px</div>
+    <div style="background-color: blue;font-size: 16px; line-height: 5em; text-align: center">2fr</div>
+          </div>
+        </td>
+
+      <tr>
+        <th colspan="1"> <!--Item name-->
+          grid-template-rows
+        </th>
+        <td colspan="1"><!--Code-->
+          Specifies the number of rows in the grid and their widths
+        <td colspan="2"><!--values-->
+          <ul>
+            <li>Multiple numbers separated by space, can be either in px or percentages</li><br>
+            <li>Using the fr Unit which splits the rows proportionally according to the distance left</li>
+          </ul>
+        </td>
+        <td colspan="2" style="text-align: center"><!--values-->
+          <span>grid-template-rows: 37% 40%;</span><br><br>
+          <div style="display: grid; grid-template-columns: 50% 35%; grid-template-rows: 37% 40%;border:rgba(255,255,255,0.5) dashed 3px;  background-color: rgba(255,255,255,0.1); grid-gap: 1em">
+
+            <div style="background-color: red;font-size: 16px; line-height: 1em; text-align: center; padding: 2em 0">37% row height</div>
+            <div style="background-color: red;font-size: 16px; line-height: 1em; text-align: center; padding: 1em 0">40% row height</div>
+            <div style="background-color: red;font-size: 16px; line-height: 1em; text-align: center; padding: 2em 0">37% row height</div>
+          </div>
+        </td>
+
+
+      <tr>
+        <th colspan="1"> <!--Item name-->
+          grid-template-areas
+        </th>
+        <td colspan="1"><!--Code-->
+          <pre>Does what
+[grid-row-start]
+[grid-column-start]
+[grid-row-end]
+[grid-column-end] does</pre>
+        <td colspan="2"><!--values-->
+          <ul>
+            <li>Grid of letters/names to represent how much each element will take, each row encapsulated in qoutation marks</li>
+          </ul>
+        </td>
+        <td colspan="2" style="text-align: center; "><!--values-->
+          <span style="text-align: right; display: inline-block">grid-template-areas: <br> "b b a"<br> "b b a"<br> "c c a";</span><br><br>
+          <span style="text-align: right; display: inline-block">#green-block{ <br> grid-area: a; }</span>
+          <span style="text-align: right; display: inline-block">#yellow-block{ <br> grid-area: b; }</span>
+          <span style="text-align: right; display: inline-block">#orange-block{ <br> grid-area: c; }</span><br><br>
+          <span style="text-align: right; display: inline-block">grid-template-rows: 3em 3em 3em;</span><br><br>
+          <span style="text-align: right; display: inline-block">grid-template-columns: 5em 5em 5em;</span><br><br>
+          <div style="display: grid;border:rgba(255,255,255,0.5) dashed 3px;  background-color: rgba(255,255,255,0.1); grid-gap: 1em; grid-template-rows: 5em 5em 5em;grid-template-columns: 3em 3em 3em; grid-template-areas:'a a b''a a b''c c b'; ">
+
+            <div style="background-color: forestgreen;font-size: 16px; line-height: 1em; text-align: center; padding: 2em 0; grid-area: a;">a</div>
+            <div style="background-color: yellow;font-size: 16px; line-height: 1em; text-align: center; padding: 1em 0; grid-area: b; color: black;">b</div>
+            <div style="background-color: orangered;font-size: 16px; line-height: 1em; text-align: center; padding: 2em 0; grid-area: c;">c</div>
+          </div>
+        </td>
+
+
+      </tr>
+
+
+
+      <tr>
+        <th colspan="1"> <!--Item name-->
+          grid-gap<br><br>
+          grid-row-gap<br><br>
+          grid-column-gap
+        </th>
+        <td colspan="1"><!--Code-->
+          <p style ="padding: 0; line-height: 2em">grid-gap is a shorthand for <span>[grid-row-gap]</span> and <span>[grid-column-gap]</span>, they specify the space around each grid item</p>
+        <td colspan="2"><!--values-->
+          <ul>
+            <li>grid-gap: <span class="description">Row gap</span> <span class="description">Column gap</span>; //any number + unit</span></li><br>
+            <li>grid-column-gap: any number + unit</li><br>
+            <li>grid-row-gap: any number + unit</li>
+          </ul>
+        </td>
+        <td colspan="2" style="text-align: center"><!--values-->
+          <span>grid-gap: 3em;</span><br><br> //if one value is provided, it applys to rows and colummns<br><br>
+          <div style="display: grid;border:rgba(255,255,255,0.5) dashed 3px;  background-color: rgba(255,255,255,0.1); grid-gap: 3em 3em; grid-template: 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr 1fr">
+
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+            <div style="background-color: red; padding: 1em; width: 100%; height: 100%; box-sizing: border-box"></div>
+          </div>
+        </td>
+
+
+      </tr>
+
+      </tbody>
+    </table>
+
+
+
+</main>
+</body>
+</html>

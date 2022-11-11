@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display&Position</title>
+  <link href="Resources/Styling/Universal%20Documentation.css" rel = 'stylesheet'>
+  <link href="Resources/Styling/stylesheet.css" type="text/css" charset="utf-8"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+  <div id="navBar">
+    <img src="Resources/Images/logoMobile.png">
+    <a href="index.html">Home</a>
+    <a href="index.html">Refrences</a>
+    <a href="index.html">Contacts</a>
+  </div>
+</nav>
+<main>
+
+  <!--Page title-->
+  <div id="topics">
+    <!--In page buttons-->
+      <a class="class" href="SelectorAndVisualRules.html">Selectors</a>
+      <a class="class" href="Typography.html">Typography</a>
+  </div>
+  <h2 class = "center"><span>
+{/Layout with FlexBox} </span></h2>
+
+
+  <div id="selectors" class="shift">
+    <table  style="transform: scale(1)">
+      <!--      <thead>-->
+      <!--      <tr>-->
+      <!--        <th colspan="3">  &lt;!&ndash;Main header&ndash;&gt;-->
+      <!--Selectors-->
+      <!--        </th>-->
+      <!--      </tr>-->
+      <!--      </thead>-->
+
+      <tbody>
+      <tr>
+          <th class="pink"  colspan="1"> <!--Column Header 1-->
+              Property
+          </th>
+          <th class="pink" colspan="2"> <!--Column Header 2-->
+              Possible values
+          </th>
+          <th class="pink" colspan="1"> <!--Column Header 3-->
+              Demo
+          </th>
+      </tr>
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              Display
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>flex:</span> sets an HTML element as a block level flex container</li>
+                  <br>
+                  <li><span>inline-flex:</span> sets an HTML element as a inline level flex container</li>
+              </ul>
+          <td colspan="1"><!--values-->
+              <div>
+                  <p style="margin: 0; padding: 0.5em">Display: flex</p>
+                  <div style="display: flex">
+                      <span style="padding: 0.3em; border: darkblue 3px solid; margin: 0.3em;">flex<br>item </span>
+                      <span style="padding: 0.3em; border: darkblue 3px solid; margin: 0.3em;">flex<br>item </span>
+                      <span style="padding: 0.3em; border: darkblue 3px solid; margin: 0.3em;">flex<br>item </span>
+                  </div>
+              </div>
+              <br>
+              <div style="display: inline-block; background-color: red">
+                  <p style="margin: 0; padding: 0.5em; font-size: 0.8em; color: white">Display:<br> inline-flex</p>
+                  <div style="display: inline-flex; background-color: red">
+                      <span style="padding: 0.3em; border: darkblue 3px solid; margin: 0.3em; font-size: 0.8em">flex<br>item </span>
+                      <span style="padding: 0.3em; border: darkblue 3px solid; margin: 0.3em; font-size: 0.8em">flex<br>item </span>
+                  </div>
+              </div>
+              <div style="display: inline-block; background-color: yellow">
+                  <p style="margin: 0; padding: 0.5em; font-size: 0.8em; color: black">Display:<br> inline-flex</p>
+                  <div style="display: inline-flex; background-color: yellow">
+                      <span style="padding: 0.3em; border: darkblue 3px solid; margin: 0.3em; font-size: 0.8em">flex<br>item </span>
+                      <span style="padding: 0.3em; border: darkblue 3px solid; margin: 0.3em; font-size: 0.8em">flex<br>item </span>
+                  </div>
+              </div>
+
+
+          </td>
+
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              flex-wrap
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>nowrap:</span> The flex items are laid out in a single line which may cause the flex container to overflow.</li>
+                  <br>
+                  <li><span>wrap:</span> The flex items break into multiple lines.</li>
+                  <br>
+                  <li><span>wrap-reversed:</span> Behaves the same as wrap but order is reversed</li>
+              </ul>
+          <td colspan="1"><!--values-->
+              <div>
+                  <p style="margin: 0; padding: 0.5em">flex-wrap: nowrap</p>
+                  <div style="display: flex; flex-wrap: nowrap">
+                      <span style="min-width: 30%; padding: 0.3em; border: darkblue 3px solid; margin: 0.3em;">flex<br>item </span>
+                      <span style="min-width: 25%;padding: 0.3em; border: darkblue 3px solid; margin: 0.3em;">flex<br>item </span>
+                      <span style="min-width: 25%;padding: 0.3em; border: darkblue 3px solid; margin: 0.3em;">flex<br>item </span>
+                  </div>
+              </div>
+              <br>
+              <div style="  background-color: lightseagreen">
+                  <p style="margin: 0; padding: 0.5em; color: black">flex-wrap: wrap</p>
+                  <div style="display: flex; flex-wrap: wrap;  background-color: lightseagreen">
+                      <span style="min-width: 30%; padding: 0.3em; border: darkgreen 3px solid; margin: 0.3em; background-color: mediumspringgreen; color: black">item1 </span>
+                      <span style="min-width: 30%; padding: 0.3em; border: darkgreen 3px solid; margin: 0.3em; background-color: mediumspringgreen; color: black">item2 </span>
+                      <span style="min-width: 30%; padding: 0.3em; border: darkgreen 3px solid; margin: 0.3em; background-color: mediumspringgreen; color: black">item3 </span>
+                  </div>
+              </div>
+              <br>
+              <div style="  background-color: lightgoldenrodyellow">
+                  <p style="margin: 0; padding: 0.5em; color: black">flex-wrap: wrap-reverse</p>
+                  <div style="display: flex; flex-wrap: wrap-reverse;  background-color: lightgoldenrodyellow">
+                      <span style="min-width: 30%; padding: 0.3em; border: darkgoldenrod 3px solid; margin: 0.3em; background-color: yellow; color: black">item1 </span>
+                      <span style="min-width: 30%; padding: 0.3em; border: darkgoldenrod 3px solid; margin: 0.3em; background-color: yellow; color: black">item2 </span>
+                      <span style="min-width: 30%; padding: 0.3em; border: darkgoldenrod 3px solid; margin: 0.3em; background-color: yellow; color: black">item3 </span>
+                  </div>
+              </div>
+              <br>
+
+
+          </td>
+      </tr>
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              flex-direction
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>row:</span> The flex container's main axis is the x-axis</li>
+                  <br>
+                  <li><span>row-reversed:</span> same as [row] but reversed order</li>
+                  <br>
+                  <li><span>column:</span> The flex container's main axis is the y-axis</li>
+                  <br>
+                  <li><span>column-reversed:</span> same as [row] but reversed order</li>
+                  <br>
+              </ul>
+          <td colspan="1"><!--values-->
+              <div>
+                  <p style="margin: 0; padding: 0.5em">flex-direction:<br> row</p>
+                  <div style="display: flex;">
+                      <span style="padding: 0.3em; border: darkblue 3px solid; margin: 0.3em;">1</span>
+                      <span style="padding: 0.3em; border: darkblue 3px solid; margin: 0.3em;">2</span>
+                      <span style="padding: 0.3em; border: darkblue 3px solid; margin: 0.3em;">3</span>
+                  </div>
+              </div>
+              <br>
+              <div style="background-color: lightcoral">
+                  <p style="margin: 0; padding: 0.5em">flex-direction: <br>row-reversed</p>
+                  <div style="display: flex; flex-direction: row-reverse; background-color: lightcoral">
+                      <span style="padding: 0.3em; border: darkred 3px solid; margin: 0.3em; background-color: red; color: white;">1</span>
+                      <span style="padding: 0.3em; border: darkred 3px solid; margin: 0.3em; background-color: red; color: white;">2</span>
+                      <span style="padding: 0.3em; border: darkred 3px solid; margin: 0.3em; background-color: red; color: white;">3</span>
+                  </div>
+              </div>
+              <br>
+              <div style="background-color: yellow">
+                  <p style="margin: 0; padding: 0.5em; color: black">flex-direction: <br>column</p>
+                  <div style="display: flex; flex-direction: column; background-color: yellow">
+                      <span style="text-align: center; padding: 0.3em; border: yellowgreen 3px solid; margin: 0.3em; background-color: lightgoldenrodyellow; color: black;">1</span>
+                      <span style="text-align: center;padding: 0.3em; border: yellowgreen 3px solid; margin: 0.3em; background-color: lightgoldenrodyellow; color: black;">2</span>
+                      <span style="text-align: center;padding: 0.3em; border: yellowgreen 3px solid; margin: 0.3em; background-color: lightgoldenrodyellow; color: black;">3</span>
+                  </div>
+              </div>
+
+
+          </td>
+      </tr>
+      <tr>
+          <th colspan="1" rowspan="1"> <!--Item name-->
+              flex-flow
+              <br>
+              <br>
+              <span class="description" style="background-color: yellow; color: red; border-color: red">parent</span>
+              <br><br>
+              <span class = "description">flex-wrap| +</span><br><br>
+              <span class = "description">flex-direction</span>
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span class = "description">any flex-direction</span> + <span class = "description">any flex-wrap</span></li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 1em"><!--values-->
+
+              <span>flex-flow: wrap column</span> <br><br>
+
+              <span>flex-flow: nowrap row-reversed</span>
+          </td>
+
+      </tr>
+      <tr>
+          <th colspan="1" > <!--Item name-->
+              flex-grow
+              <br>
+              <br>
+              <span class="description" style="background-color: red; color: yellow; border-color: yellow">child</span>
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>number + no unit</span></li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="position:relative; transform: scale(1); background-color: transparent; display: flex; flex-direction: column;">
+                  <p class="description appear1" style="display: inline; margin: 0.5em; padding: 0.1em 0.5em; width: 10em; text-align: center;">flex-grow: 1</p>
+                  <p class="description appear2" style="margin: 0.5em; padding: 0.1em 0.5em; width: 10em; text-align: center;">flex-grow: 2</p>
+                  <p class="description appear3" style="margin: 0.5em; padding: 0.1em 0.5em; width: 10em; text-align: center;">flex-grow: 3</p>
+
+              </div>
+              <div style="display: flex; background-color: transparent;position: relative; top: 1.5em; ">
+                  <div id="grow" style=" background-color: mediumblue; border: midnightblue 3px solid; color: lightsteelblue; margin: 0.3em; flex-grow: 1; font-size: 0.7em;">I grow</div>
+                  <div style=" background-color: mediumblue; border: midnightblue 3px solid; color: lightsteelblue; margin: 0.3em; flex-grow: 1; font-size: 0.7em;">Item 2</div>
+                  <div style=" background-color: mediumblue; border: midnightblue 3px solid; color: lightsteelblue; margin: 0.3em; flex-grow: 1; font-size: 0.7em;">Item 3</div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <th colspan="1" rowspan="1"> <!--Item name-->
+              flex-shrink
+              <br>
+              <br>
+              <span class="description" style="background-color: red; color: yellow; border-color: yellow">child</span>
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>number + no unit</span> </li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="position:relative; transform: scale(1); background-color: transparent; display: flex; flex-direction: column;">
+                  <p class="description appear1" style="display: inline; margin: 0.5em; padding: 0.1em 0.5em; width: 10em; text-align: center;">flex-shrink: 1</p>
+                  <p class="description appear2" style="margin: 0.5em; padding: 0.1em 0.5em; width: 10em; text-align: center;">flex-shrink: 2</p>
+                  <p class="description appear3" style="margin: 0.5em; padding: 0.1em 0.5em; width: 10em; text-align: center;">flex-shrink: 3</p>
+
+              </div>
+              <div style="display: flex; background-color: transparent;position: relative; top: 1.5em; justify-content: stretch ">
+                  <div id="shrink" style=" width: 10em;background-color: mediumblue; border: midnightblue 3px solid; color: lightsteelblue; margin: 0.3em; font-size: 0.7em;flex-shrink: 1">I shrink</div>
+                  <div style="width: 10em; background-color: mediumblue; border: midnightblue 3px solid; color: lightsteelblue; margin: 0.3em;  font-size: 0.7em; flex-shrink: 1">Item 2</div>
+                  <div style="width: 10em; background-color: mediumblue; border: midnightblue 3px solid; color: lightsteelblue; margin: 0.3em; font-size: 0.7em;flex-shrink: 1">Item 3</div>
+              </div>
+          </td>
+      </tr>
+
+      <tr>
+          <th colspan="1" rowspan="1"> <!--Item name-->
+              flex-basis
+              <br>
+              <br>
+              <span class="description" style="background-color: red; color: yellow; border-color: yellow">child</span>
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>number + unit:</span> specifies the initial size of the flex item, which then shrinks to fit the space available</li><br>
+                  <li><span>auto:</span> default value, sets the length based on the dimensions specified, otherwise sets it based on the content</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="display: flex; background-color: transparent;position: relative; top: 1.5em; justify-content: stretch ">
+                  <div style=" width: 10em;background-color: mediumblue; border: midnightblue 3px solid; color: lightsteelblue; margin: 0.3em; font-size: 1em; flex-basis: 15em">15em basis</div>
+                  <div style="width: 10em; background-color: mediumblue; border: midnightblue 3px solid; color: lightsteelblue; margin: 0.3em;  font-size: 1em; flex-shrink: 1">Item 2</div>
+                  <div style="width: 10em; background-color: mediumblue; border: midnightblue 3px solid; color: lightsteelblue; margin: 0.3em; font-size: 1em;flex-shrink: 1">Item 3</div>
+              </div>
+              <p style="padding: 1em 1em 0 1em; box-sizing: border-box">So the basis was 15em but the final could be much less!</p>
+              <div style="display: flex; background-color: lightpink;position: relative;justify-content: stretch; border: 4px deepskyblue dashed; width: 100%; box-sizing: border-box;  margin: 0 auto 1em; transform: scale(1); position: relative">
+                  <div style=" width: 30%;background-color: lightskyblue; border: black 3px solid; color: black; margin: 0.1em 0; padding: 0.2em 0.3em; font-size: 1em; flex-basis: 40%; text-align: right">final</div>
+                  <div style="height: 0; width: 30%; background-color: transparent; border: red 3px dashed; color: lightsteelblue; margin: auto 0; font-size: 1em; flex-shrink: 1; "></div>
+                  <div style="height: 0; width: 30%; background-color: transparent; border: red 3px dashed; color: lightsteelblue; margin: auto 0; font-size: 1em; flex-shrink: 1; "></div>
+                  <div style="position: absolute; right: 0em; top: 0.4em; background-color: lightpink; color: black; margin: auto 0; font-size: 1em; flex-shrink: 1; font-weight: bold ;">basis|</div>
+
+              </div>
+          </td>
+
+      </tr>
+      <tr>
+          <th colspan="1" rowspan="4"> <!--Item name-->
+              flex
+              <br>
+              <br>
+              <span class="description" style="background-color: red; color: yellow; border-color: yellow">child</span>
+              <br><br>
+              <span class="description">flex-grow| +</span><br><br>
+              <span class="description">flex-shrink| +</span><br><br>
+              <span class="description">flex-basis</span>
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>One value:</span> unitless number: flex-grow
+                      flex-basis is then equal to 0</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; width: 100%; text-align: center">
+                  <span>flex: 2</span>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>One Value:</span> width/height: flex-basis</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; width: 100%; text-align: center">
+                  <span>flex: 10em</span>
+              </div>
+          </td>
+      </tr>
+
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>Two Values:</span> unitless number + width/height >> flex-grow | flex-basis</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; width: 100%; text-align: center">
+                  <span>flex: 2 10em </span>
+              </div>
+          </td>
+      </tr>
+
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>Three Values:</span> flex-grow | flex-shrink | flex-basis</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; width: 100%; text-align: center">
+                  <span>flex: 2 2 10%</span>
+              </div>
+          </td>
+      </tr>
+
+
+      <tr>
+          <th colspan="1" rowspan="6"> <!--Item name-->
+              justify-content
+              <br>
+              <br>
+              <span class="description" style="background-color: midnightblue; color: lightsteelblue">x-axis</span>
+              <span class="description" style="background-color: yellow; color: red; border-color: red">parent</span>
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>space-between:</span> distributes items evenly, first & last items are flush with the wall</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; justify-content: space-between; width: 100%;">
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>space-around:</span> Distribute items evenly Items have a half-size space on either end</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; justify-content: space-around; width: 100%; margin: 0; padding: 0">
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>space-evenly:</span> Distribute items evenly Items have a equal-size space on either end</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; justify-content: space-evenly; width: 100%; margin: 0; padding: 0">
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>flex-start:</span> packs flex items from the start</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; justify-content: flex-start; width: 100%; margin: 0; padding: 0">
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>flex-end:</span> packs flex items from the end</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; justify-content: flex-end; width: 100%; margin: 0; padding: 0">
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>left/right/center:</span> packs flex items left/right/centert</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <p>justify-content: left; </p>
+              <div style="background-color: transparent; display: flex; justify-content: left; width: 100%; margin: 0; padding: 0">
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="display: inline-block; background-color: red; width: 3em; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <th colspan="1" rowspan="1"> <!--Item name-->
+              justify-self
+              <br>
+              <br>
+              <span class="description" style="background-color: midnightblue; color: lightsteelblue">x-axis</span>
+              <span class="description" style="background-color: yellow; color: red; border-color: red">child</span>
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>this item is ignored in flexbox!</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <p style="text-align: center">-na-</p>
+          </td>
+      </tr>
+      <tr>
+          <th colspan="1" rowspan="5"> <!--Item name-->
+              align-items
+              <br>
+              <br>
+              <span class="description" style="background-color: darkgreen; color: lightblue">y-axis</span>
+              <span class="description" style="background-color: yellow; color: red; border-color: red">parent</span>
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>stretch:</span> flex items with no height constraints are stretched to fill y-axis</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; width: 100%; flex-wrap: wrap; height: 12em; align-items:stretch ">
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: blue; border: lightblue dashed 3px; margin: 0.4em;"></div>
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: blue;  border: lightblue dashed 3px; margin: 0.4em"></div>
+                  <div style="width: 40%;; box-sizing: border-box; display: inline-block; background-color: blue;  border: lightblue dashed 3px; margin: 0.4em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>center:</span> Packs items to the center (vertically)</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; width: 100%; flex-wrap: wrap; height: 12em; align-items:center ">
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: blue; border: lightblue dashed 3px; margin: 0.4em; min-height: 2.5em"></div>
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: blue;  border: lightblue dashed 3px; margin: 0.4em; min-height: 2.5em"></div>
+                  <div style="width: 40%;; box-sizing: border-box; display: inline-block; background-color: blue;  border: lightblue dashed 3px; margin: 0.4em; min-height: 2.5em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>flex-start:</span> Packs flex items from the start</li><br>
+              </ul>
+          </td>
+
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; width: 100%; flex-wrap: wrap; height: 12em; align-items:flex-start ">
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: blue; border: lightblue dashed 3px; margin: 0.4em; min-height: 2.5em"></div>
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: blue;  border: lightblue dashed 3px; margin: 0.4em; min-height: 2.5em"></div>
+                  <div style="width: 40%;; box-sizing: border-box; display: inline-block; background-color: blue;  border: lightblue dashed 3px; margin: 0.4em; min-height: 2.5em"></div>
+              </div>
+          </td>
+      </tr>
+
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>flex-ennd:</span> Packs flex items from the end</li><br>
+              </ul>
+          </td>
+
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; width: 100%; flex-wrap: wrap; height: 12em; align-items:flex-end ">
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: blue; border: lightblue dashed 3px; margin: 0.4em; min-height: 2.5em"></div>
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: blue;  border: lightblue dashed 3px; margin: 0.4em; min-height: 2.5em"></div>
+                  <div style="width: 40%;; box-sizing: border-box; display: inline-block; background-color: blue;  border: lightblue dashed 3px; margin: 0.4em; min-height: 2.5em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>baseline:</span> All flex items are aligned such that their flex container baselines align</li><br>
+              </ul>
+          </td>
+
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; width: 100%; flex-wrap: wrap; height: 12em; align-items:baseline ">
+                  <div style="width: 25%; box-sizing: border-box; display: inline-block; background-color: blue; border: lightblue dashed 3px; margin: 0.4em; min-height: 5em"></div>
+                  <div style="width: 25%; box-sizing: border-box; display: inline-block; background-color: blue;  border: lightblue dashed 3px; margin: 0.4em; min-height: 2.5em"></div>
+                  <div style="width: 25%;; box-sizing: border-box; display: inline-block; background-color: blue;  border: lightblue dashed 3px; margin: 0.4em; min-height: 4em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <th colspan="1" rowspan="1"> <!--Item name-->
+              align-self
+              <br>
+              <br>
+              <span class="description" style="background-color: darkgreen; color: lightblue">y-axis</span>
+              <span class="description" style="background-color: red; color: yellow; border-color: yellow">child</span>
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>Same values as align-items, applies to specific child</li><br>
+                  <li><span>auto, applies the same value of align-items of the parent!</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <p style="text-align: center">-na-</p>
+          </td>
+      </tr>
+      <tr>
+          <th colspan="1" rowspan="7"> <!--Item name-->
+              align-content
+              <br>
+              <br>
+              <span class="description" style="background-color: darkgreen; color: lightblue">y-axis</span>
+              <span class="description" style="background-color: yellow; color: red; border-color: red">parent</span>
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>space-between:</span> distributes rows evenly, first & last items are flush with the wall</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; width: 100%; flex-wrap: wrap; height: 12em; align-content:space-between ">
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em;"></div>
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="width: 40%;; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>space-around:</span> Distribute rows evenly Items have a half-size space on either end</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; width: 100%; flex-wrap: wrap; height: 12em; align-content:space-around ">
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em;"></div>
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="width: 40%;; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>space-evenly:</span> Distribute rows evenly Items have a equal-size space on either end</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; width: 100%; flex-wrap: wrap; height: 12em; align-content:space-evenly ">
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em;"></div>
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="width: 40%;; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>flex-start:</span> packs flex rows from the start</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; width: 100%; flex-wrap: wrap; height: 12em; align-content:flex-start ">
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em;"></div>
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="width: 40%;; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>flex-end:</span> packs flex rows from the end</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; width: 100%; flex-wrap: wrap; height: 12em; align-content:flex-end ">
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em;"></div>
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="width: 40%;; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>center:</span> packs flex rows to the center</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; width: 100%; flex-wrap: wrap; height: 12em; align-content:center ">
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em;"></div>
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="width: 40%;; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+              </div>
+          </td>
+      </tr>
+      <tr>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>baseline/first baseline/last baseline:</span> packs flex rows according to their baseline</li><br>
+              </ul>
+          </td>
+          <td colspan="1" style="margin: 0; padding: 0"><!--values-->
+              <div style="background-color: transparent; display: flex; width: 100%; flex-wrap: wrap; height: 12em; align-content:baseline ">
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em;"></div>
+                  <div style="width: 40%; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+                  <div style="width: 40%;; box-sizing: border-box; display: inline-block; background-color: red; height: 3em; border: yellow dashed 3px; margin: 0.4em"></div>
+              </div>
+          </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typography</title>
+  <link href="Resources/Styling/Universal%20Documentation.css" rel = 'stylesheet'>
+  <link href="Resources/Styling/stylesheet.css" type="text/css" charset="utf-8"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+  <div id="navBar">
+    <img src="Resources/Images/logoMobile.png">
+    <a href="index.html">Home</a>
+    <a href="index.html">Refrences</a>
+    <a href="index.html">Contacts</a>
+  </div>
+</nav>
+<main>
+
+  <!--Page title-->
+  <div id="topics">
+    <!--In page buttons-->
+      <a class="class" href="SelectorAndVisualRules.html">Selectors</a>
+      <a class="class" href="Typography.html">Typography</a>
+  </div>
+  <h2 class = "center"><span>
+{/Typography} </span></h2>
+
+
+  <div id="selectors" class="shift">
+    <table >
+      <!--      <thead>-->
+      <!--      <tr>-->
+      <!--        <th colspan="3">  &lt;!&ndash;Main header&ndash;&gt;-->
+      <!--Selectors-->
+      <!--        </th>-->
+      <!--      </tr>-->
+      <!--      </thead>-->
+
+      <tbody>
+      <tr>
+        <th class="pink"  colspan="1"> <!--Column Header 1-->
+          Item
+        </th>
+          <th class="pink" colspan="2"> <!--Column Header 1-->
+              Code example
+          </th>
+          <th class="pink" colspan="1"> <!--Column Header 1-->
+              possible value
+          </th>
+        <th class="pink" colspan="2"> <!--Column Header 1-->
+          Demo
+        </th>
+      </tr>
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              Text foreground color
+          </th>
+          <td colspan="2"><!--Code-->
+              color: blue;
+          <td><!--values-->
+              <ul>
+                  <li><span>Hex: </span>#f33f33</li>
+                  <li><span>Hex: </span>#f33</li>
+                  <li><span>Name: </span>blue</li>
+                  <li><span>RGB: </span>rgb(255, 0, 159)</li>
+                  <li><span>RGBA: </span>rgba(255, 255, 255, 0.7)</li>
+                  <li><span>HSL: </span>hsl(150deg 0.3turn 50%</li>
+              </ul>
+          <span class="hightlight">If the hex repeats it self u can shorten it</span>
+          </td>
+          <td  colspan="2"><!--Demo-->
+              <div  style="color: yellow">yellow text</div>
+              <div  style="color: rgba(255,0,255, 0.7)">semi-transparent rgba Text</div>
+          </td>
+      </tr>
+
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              Text alight
+          </th>
+          <td colspan="2"><!--Code-->
+              text-align: right;
+          <td><!--values-->
+              <ul>
+                  <li>start</li>
+                  <li>end</li>
+                  <li>left</li>
+                  <li>right</li>
+                  <li>center</li>
+                  <li>justify</li>
+              </ul>
+          </td>
+          <td  colspan="2"><!--Demo-->
+              <div  style="text-align: right">right-aligned Text</div>
+              <div  style="text-align: center">center-aligned Text</div>
+              <div  style="text-align: left">left-aligned Text</div>
+          </td>
+      </tr>
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              Font Size
+          </th>
+          <td colspan="2"><!--Code-->
+              <pre>
+font-size: 30px;
+</pre>
+          <td><!--values-->
+              <pre>
+any number + unit
+</pre>
+          </td>
+          <td  colspan="2" style="font-size: 30px;"><!--Demo-->
+              30px-sized Text
+          </td>
+      </tr>
+
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              Font Weight
+          </th>
+          <td colspan="2"><!--Code-->
+font-weight: bold;
+          <td><!--values-->
+          <ul>
+              <li>bold</li>
+              <li>bolder</li>
+              <li>normal</li>
+              <li>lighter</li>
+              <li>a number</li>
+          </ul>
+          <span class="hightlight">"light" isnt an acceptable value</span><br><br>
+
+          <span class="hightlight">400 is the default font-size</span>
+          </td>
+          <td  colspan="2"><!--Demo-->
+              <div  style="font-weight: bold">Bold Text</div>
+              <div  style="font-weight: lighter">Lighter Text</div>
+          </td>
+      </tr>
+
+
+      <tr>
+          <th> <!--Item name-->
+              Font Family
+          </th>
+          <td colspan="2"><!--Code-->
+              font-family: Georgia, seif;
+          <td><!--values-->
+              <ul>
+                  <li>Main font name</li>
+                  <li>then fallBack font</li>
+              </ul>
+              <span class="hightlight">If the font name is more than one word it has to be put in qoutation marks</span>
+          </td>
+          <td  colspan="2"><!--Demo-->
+              <div  style="font-family: Impact">Impact-FONT Text</div>
+              <div  style="font-family: Helvetica">Helvetica-FONT Text</div>
+              <div  style="font-family: 'American Typewriter'">American typewriter Text</div>
+          </td>
+      </tr>
+
+      <tr>
+          <th> <!--Item name-->
+              Font-face
+          </th>
+          <td colspan="2"><!--Code-->
+              <pre>
+@font-face{
+font-family: 'fontName';
+src: url(../fonts/font1.woff)
+               format('woff),
+url(../fonts/font2.woff2)
+               format('woff2);
+          }</pre>
+          <td><!--values-->
+              <ul>
+                  <li>font-family: specify name</li><br>
+                  <li>src: specify one or more sources</li><br>
+                  <li>format: specify type of each font</li><br>
+              </ul>
+              <span class = 'hightlight'>Font-face is used to add custom fonts</span>
+          </td>
+          <td  colspan="2"><!--Demo-->
+              <div  style="font-family: monicaa, monospace; font-size: 3em">custom "monica" font</div>
+          </td>
+      </tr>
+
+      <tr>
+          <th> <!--Item name-->
+              Font style
+          </th>
+          <td colspan="2"><!--Code-->
+              <pre>
+font-style: oblique 30deg;
+font-style: italic;
+          }</pre>
+          <td><!--values-->
+              <ul>
+                  <li>normal</li><br>
+                  <li>italic</li><br>
+                  <li>oblique 30deg</li><br>
+              </ul>
+              <span class = 'hightlight'>Oblique degree is between -90, 90</span>
+          </td>
+          <td  colspan="2"><!--Demo-->
+              <div  style="font-style: oblique 80deg; font-size: 1em">oblique 80deg text</div>
+              <div  style="font-style: italic; font-size: 1em">italic text</div>
+          </td>
+      <tr>
+          <th> <!--Item name-->
+              Line height
+          </th>
+          <td colspan="2"><!--Code-->
+              <pre>
+line-height: 10px;
+line-height: 2;
+          </pre>
+          <td><!--values-->
+              <ul>
+                  <li>any number + unity</li><br>
+                  <li>unitless numbers (as a ratio)</li><br>
+              </ul>
+          </td>
+          <td  colspan="2"><!--Demo-->
+              <div class="code"  style="line-height: 20px"> Line-height 20px Line-height 20px Line-height 20px Line-height 20px</div><br>
+              <div class="code" style="line-height: 3; font-size: 1em"> Line-height 3 Line-height 3 Line-height 3 Line-height 3</div>
+          </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</main>
+</body>
+</html>

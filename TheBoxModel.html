@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typography</title>
+  <link href="Resources/Styling/Universal%20Documentation.css" rel = 'stylesheet'>
+  <link href="Resources/Styling/stylesheet.css" type="text/css" charset="utf-8"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+  <div id="navBar">
+    <img src="Resources/Images/logoMobile.png">
+    <a href="index.html">Home</a>
+    <a href="index.html">Refrences</a>
+    <a href="index.html">Contacts</a>
+  </div>
+</nav>
+<main>
+
+  <!--Page title-->
+  <div id="topics">
+    <!--In page buttons-->
+      <a class="class" href="SelectorAndVisualRules.html">Selectors</a>
+      <a class="class" href="Typography.html">Typography</a>
+  </div>
+  <h2 class = "center"><span>
+{/The Box-Model} </span></h2>
+
+
+  <div id="selectors" class="shift">
+    <table >
+      <!--      <thead>-->
+      <!--      <tr>-->
+      <!--        <th colspan="3">  &lt;!&ndash;Main header&ndash;&gt;-->
+      <!--Selectors-->
+      <!--        </th>-->
+      <!--      </tr>-->
+      <!--      </thead>-->
+
+      <tbody>
+      <tr>
+        <th class="pink"  colspan="1"> <!--Column Header 1-->
+          Propety
+        </th>
+          <th class="pink" colspan="2"> <!--Column Header 1-->
+              Possible values
+          </th>
+        <th class="pink" colspan="1"> <!--Column Header 1-->
+          Demo
+        </th>
+      </tr>
+      <tr>
+          <th colspan="1"> <!--Item name-->
+margin:
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>30px</span> -Sets margin from all sides</li>
+                  <li><span>20px 10px</span> -Sets margin for y and x axis</li>
+                  <li><span>30px 20px 10px 15px</span> -Sets margin for top, right, bottom, left</li>
+                  <li><span>auto</span> -Centers the object in the middle</li>
+                  <li><span>30px auto </span> -gives 30px y axis margin, centers on x-axis</li>
+              </ul>
+              <span class="hightlight">Margins collapse along the y axis, not x axis</span>
+          <td colspan="1"><!--values-->
+          <div style="margin: auto; text-align: center">margin:auto demo</div>
+          </td>
+
+      </tr>
+
+      <tr>
+          <th colspan="1"> <!--Item name-->
+overflow:
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>visible</span> -content is rendered outside padding box</li>
+                  <li><span>hidden</span> -content outside padding box is hidden, has no scroll support except if done programmatically</li>
+                  <li><span>clip</span> -similar to hidden, but has no support for programmatic scrolling too</li>
+                  <li><span>scroll</span> -if content is bigger than box, a scroll bar appears</li>
+                  <li><span>auto</span> -looks like "visible" if it fits, or "scroll" otherwise</li>
+              </ul>
+              <span class="hightlight">You can also set overflow for each axis separetely , for example: <br> <br> overflow: hidden visible;</span>
+          <td colspan="1"><!--values-->
+          <p>overflow:scroll demo</p>
+          <div style="overflow:scroll; width: 50%; height: 4em; margin: auto">
+              Scroll me, my text is too big to fit inside this small tiny and stupid box, i cant breath in here bruh</div>
+          </td>
+
+      </tr>
+
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              max-width/ min-width<br><br>
+              max-height/ min-height
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>Any number+ unit</span> </li>
+              </ul>
+              <span class="hightlight"></span>
+          <td colspan="1"><!--values-->
+
+              <div style="max-width: 10em;">
+                  Try resizing this window!</div>
+          </td>
+
+      </tr>
+
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              visibilty
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>visible</span> -element is visible</li>
+                  <li><span>hidden</span> -element is hidden but its space stays empty</li>
+                  <li><span>collape</span> -depends on the element<br> -collapsed table cells are hidden and their space is taken by others
+                      <br> -collapsed flex elements and ruby annotations are same
+                      <br> -other collapsed elements are treated like hidden</li>
+              </ul>
+              <span class="hightlight"></span>
+          <td colspan="1"><!--values-->
+              <div>there is a hidden item under me!</div>
+              <div style="height: 10em; visibility: hidden">
+              </div>
+              <div>there is a hidden item above me!</div>
+          </td>
+
+      </tr>
+
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              box-sizing:
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>border-box:</span> -size includes content,padding & borders</li>
+                  <li><span>content-box:</span> -size includes content only</li>
+              </ul>
+              <span class="hightlight"></span>
+          <td colspan="1"><!--values-->
+          <div style="background-color: red; width: 180px">REAL 180PX WIDTH</div>
+          <p style="text-align: justify; display: block; width: 100%; padding:0;">each item below has width 180px, padding 5px and border 5px</p>
+          <div style="padding: 5px; border: yellow dotted 5px; box-sizing: border-box; width: 180px">180px border-box
+          </div>
+          <br>
+          <div style="padding: 5px; border: yellow dotted 5px; box-sizing: content-box; width: 180px">180px content-box</div>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</main>
+</body>
+</html>

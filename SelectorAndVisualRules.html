@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Selectors & Visuals</title>
+  <link href="Resources/Styling/Universal%20Documentation.css" rel = 'stylesheet'>
+  <link href="Resources/Styling/stylesheet.css" type="text/css" charset="utf-8"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+  <div id="navBar">
+    <img src="Resources/Images/logoMobile.png">
+    <a href="index.html">Home</a>
+    <a href="index.html">Refrences</a>
+    <a href="index.html">Contacts</a>
+  </div>
+</nav>
+<main>
+
+  <!--Page title-->
+    <div id="topics">
+        <!--In page buttons-->
+        <a class="class" href="SelectorAndVisualRules.html">Selectors</a>
+        <a class="class" href="Typography.html">Typography</a>
+    </div>
+  <h2 class = "center"><span>
+{/Selectors} </span></h2>
+
+
+  <div id="selectors" class="shift">
+    <table >
+<!--      <thead>-->
+<!--      <tr>-->
+<!--        <th colspan="3">  &lt;!&ndash;Main header&ndash;&gt;-->
+<!--Selectors-->
+<!--        </th>-->
+<!--      </tr>-->
+<!--      </thead>-->
+
+      <tbody>
+      <tr>
+        <th class="pink"> <!--Column Header 1-->
+Item
+        </th>
+        <th class="pink"> <!--Column Header 1-->
+Description
+        </th>
+        <th class="pink"> <!--Column Header 1-->
+Demo
+        </th>
+      </tr>
+      <tr>
+          <th> <!--Item name-->
+              Type selector
+          </th>
+          <td><!--Description-->
+              used to match elements of all given types
+          </td>
+          <td><!--Demo-->
+              <pre>
+    p{
+          color:red;
+    }
+</pre>
+          </td>
+      </tr>
+      <tr>
+          <th> <!--Item name-->
+              class selector
+          </th>
+          <td><!--Description-->
+              Class selectors are denoted with a period, they are re-usable and may be applied to many elements
+          </td>
+          <td><!--Demo-->
+              <pre>
+    .column{
+          color:red;
+    }
+</pre>
+          </td>
+      </tr>
+      <tr>
+          <th> <!--Item name-->
+              ID Selector
+          </th>
+          <td><!--Description-->
+              ID selectors should be unique and can be applied to only one element
+          </td>
+          <td><!--Demo-->
+              <pre>
+    #iphone{
+          color:yellow;
+    }
+</pre>
+          </td>
+      </tr>
+      <tr>
+          <th> <!--Item name-->
+CSS Selector groups
+          </th>
+          <td><!--Description-->
+              Makes multiple css selectors match the same css rule!
+          </td>
+          <td><!--Demo-->
+              <pre>
+    h1, h2{
+          color:blue;
+    }
+</pre>
+          </td>
+      </tr>
+
+      <tr>
+          <th> <!--Item name-->
+             Chaining selectors
+          </th>
+          <td><!--Description-->
+          CSS rules can be set so that rule-sets apply to only such criteria
+          </td>
+          <td><!--Demo-->
+<pre>
+h1.yellow{
+    font-size: 2em;
+    color: yellow;
+}
+</pre>
+
+              <span>//now only h1 elements with class "yellow" will be affected</span>
+          </td>
+      </tr>
+
+      <tr>
+          <th> <!--Item name-->
+              descendant selector
+          </th>
+          <td><!--Description-->
+         Used to match elements that are children of other elements!
+          </td>
+          <td><!--Demo-->
+              <pre>
+article p{
+    color: yellow;
+}
+</pre>
+
+              <span>//The p children of article get affected!</span>
+          </td>
+      </tr>
+
+      <tr>
+          <th> <!--Item name-->
+              selector specifity
+          </th>
+          <td><!--Description-->
+              When there are multiple conflicting property values that point to the same element, the one with highest specifity gets applied
+          </td>
+          <td><!--Demo-->
+              <pre>
+    h1{
+          color: yellow;
+    }
+
+    h1#header{
+          color: red;
+    }
+
+</pre>
+
+              <span>//The h1 with id #header will be red, not yellow</span>
+          </td>
+      </tr>
+      <tr>
+          <th> <!--Item name-->
+              !Important rule
+          </th>
+          <td><!--Description-->
+              The !important rule is used on a declaration to override any other declaration
+          </td>
+          <td><!--Demo-->
+              <pre>
+    h1#header{
+          color: red;
+    }
+    h1{
+          color: yellow !important;
+    }
+
+
+</pre>
+
+              <span>//Even tho (h1) is less specific, the !important will override all the other color declarations and the text will be yellow!</span>
+          </td>
+      </tr>
+
+
+      </tbody>
+    </table>
+  </div>
+
+</main>
+</body>
+</html>

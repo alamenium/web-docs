@@ -1,0 +1,445 @@
+/*General Styling*/
+
+*{
+    font-family: "Fira Code", monospace;
+}
+
+@font-face {
+    font-family: 'monicaa';
+    src: url('/Resources/Fonts/monichapersonaluse-vmky4-webfont.woff') format('woff'),
+    url('/Resources/Fonts/monichapersonaluse-vmky4-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,1);
+    color: white;
+}
+
+.center{
+    text-align: center;
+
+}
+
+.left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom0{
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes appear1{
+    0%{
+        visibility: visible;
+    }
+    33%{
+        visibility: collapse;
+    }
+    66%{
+        visibility: collapse;
+    }
+    100%{
+        visibility: collapse;
+    }
+}
+@keyframes appear2{
+    0%{
+        visibility: collapse;
+    }
+    32.9%{
+        visibility: collapse;
+    }
+    33%{
+        visibility: visible;
+    }
+    66%{
+        visibility: collapse;
+    }
+    100%{
+        visibility: collapse;
+    }
+}
+@keyframes appear3{
+    0%{
+        visibility: collapse;
+    }
+    33%{
+        visibility: collapse;
+    }
+    65.9%{
+        visibility: collapse;
+    }
+    66%{
+        visibility: visible;
+    }
+    100%{
+        visibility: collapse;
+    }
+}
+
+.appear1{
+    animation-name: appear1;
+}
+.appear2{
+    animation-name: appear2;
+}
+.appear3{
+    animation-name: appear3;
+}
+
+.appear1, .appear2, .appear3{
+    top: -1.5em;
+    position: fixed;
+    animation-iteration-count: infinite;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes grow{
+    0%{
+        flex-grow: 3;
+    }
+    5%{
+        flex-grow: 1;
+    }
+    33%{
+        flex-grow: 1;
+    }
+    38%{
+        flex-grow: 2;
+    }
+    66%{
+        flex-grow: 2;
+    }
+    71%{
+        flex-grow: 3;
+    }
+    100%{
+        flex-grow: 3;
+    }
+}
+
+#grow{
+    animation-name: grow;
+    animation-iteration-count: infinite;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+}
+
+@keyframes shrink{
+    0%{
+        flex-shrink: 3;
+    }
+    5%{
+        flex-shrink: 1;
+    }
+    33%{
+        flex-shrink: 1;
+    }
+    38%{
+        flex-shrink: 2;
+    }
+    66%{
+        flex-shrink: 2;
+    }
+    71%{
+        flex-shrink: 3;
+    }
+    100%{
+        flex-shrink: 3;
+    }
+}
+
+#shrink{
+    animation-name: shrink;
+    animation-iteration-count: infinite;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+}
+
+/*Navigation Styling*/
+
+#navBar{
+    background-color: rgba(0,0,0,0.8);
+    height: 4em;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px;
+
+}
+
+.html{
+    background-color: rgba(0,0,0, 0.7);
+    border-radius: 0.3em;
+    border: lightgray 1px solid;
+    color: green;
+    padding: 0 0.3em;
+}
+.css{
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 0.3em;
+    border: lightgray 1px solid;
+    color: indianred;
+    padding: 0 0.3em;
+}
+.description{
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 0.3em;
+    border: lightgray 1px solid;
+    color: lightgray;
+    padding: 0 0.3em;
+}
+.js{
+    background-color: rgba(0,0,0, 0.7);
+    border-radius: 0.3em;
+    border: lightgray 1px solid;
+    color: yellow;
+    padding: 0 0.3em;
+}
+
+ul{
+    padding-left: 1em;
+}
+
+.toolTip .toolTipText{
+    visibility: hidden;
+}
+
+.toolTip:hover .toolTipText{
+    visibility: visible;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: black;
+    border-bottom: 1px solid lightgray;
+}
+
+#navBar a {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    margin: 0 1em 0 1em;
+    padding: 0 0.3em;
+    font-size: 1em;
+    text-align: center;
+    line-height: 4em;
+}
+
+
+#navBar a:Hover{
+    background-color: white;
+    color: black;
+    margin: 0 0.4em 0 1em;
+}
+
+#navBar a:Hover::after {
+    content: "_";
+
+}
+/*Main Styling*/
+
+.shift{
+    padding-top: 9.5em;
+    position: relative;
+    top: -9.5em;
+    margin-bottom: -9.5em;
+}
+main{
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    display: block;
+    border: black 1px solid;
+}
+
+.class{
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    border: lightgray 2px solid;
+    border-radius: 2em;
+    padding: 1em 2em;
+    margin: 1em;
+    display: inline-block;
+    transition: color,background-color 0.3s;
+}
+
+.big.class{
+    padding: 2em 2em;
+    border-radius: 1em;
+    box-sizing: border-box;
+    width: 44%;
+    text-align: center;
+}
+
+
+
+.class:hover{
+    background-color: white;
+    color: black;
+}
+
+
+#topics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: sticky;
+    top: 4em;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 8;
+    height: 5.5em;
+
+}
+
+p{
+    padding: 0 1.5em;
+    margin: 1em auto;
+    max-width: 50em;
+    color: lightgray;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Fira Code', monospace;
+    font-size: 4.5em;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 0 10px #fff;
+    margin: 0.5em 0;
+}
+h2{
+     font-family: 'Fira Code', monospace;
+     font-size: 2.5em;
+     font-weight: 300;
+     text-align: center;
+     width: 100%;
+     text-shadow: 0 0 10px #fff;
+     margin: 0.5em 0;
+ }
+
+
+section{
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+}
+
+section button {
+    font-size: 0.9em;
+    background-color: transparent;
+    color: lightgray;
+    border: solid lightgray 2px;
+    margin: 1em;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 0 0 5px #fff;
+
+    cursor: pointer;
+    transition: padding 0.2s;
+}
+
+section button::after {
+    border: solid lightgray 2px;
+    padding: 4em;
+    box-shadow: 0 0 2px #fff;
+}
+
+table{
+    border: white solid 2px;
+    border-spacing: 0;
+    margin: 0 auto;
+    width: 90%;
+    table-layout: fixed;
+    background-color: black;
+    top: 10em;
+}
+
+
+th, td, tr{
+
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+
+    border: darkgray solid 1px ;
+}
+
+tbody tr{
+    height: 50px;
+}
+
+th{
+    background-color: rgba(255, 255, 0, 0.3);;
+}
+
+tbody td {
+    text-align: left;
+}
+
+.tags th::after{
+    content: ">";
+}
+.tags th::before{
+    content: "<";
+}
+
+thead th{
+    background-color: white;
+    color: black;
+    line-height: 2;
+}
+
+.pink {
+    background-color: rgba(255, 0, 255, 0.5);
+}
+
+.black{
+    color: black;
+}
+
+td span, .code{
+    background-color: rgba(0,0,255 , 0.5);
+}
+
+.hightlight{
+    color: yellow;
+    background-color: rgba(255,255,0 , 0.2);
+}
+
+td div{
+    background-color: dodgerblue;
+}
+
+
+
+.example{
+    text-align: left;
+    font-size: small;
+}
+
+.imp {
+    font-size: larger;
+    font-weight: bold;
+    padding: 2px;
+    line-height: 1.5;
+    background-color: lightgray;
+}
+
+

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display&Position</title>
+  <link href="Resources/Styling/Universal%20Documentation.css" rel = 'stylesheet'>
+  <link href="Resources/Styling/stylesheet.css" type="text/css" charset="utf-8"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+  <div id="navBar">
+    <img src="Resources/Images/logoMobile.png">
+    <a href="index.html">Home</a>
+    <a href="index.html">Refrences</a>
+    <a href="index.html">Contacts</a>
+  </div>
+</nav>
+<main>
+
+  <!--Page title-->
+  <div id="topics">
+    <!--In page buttons-->
+      <a class="class" href="SelectorAndVisualRules.html">Selectors</a>
+      <a class="class" href="Typography.html">Typography</a>
+  </div>
+  <h2 class = "center"><span>
+{/Display & Positioning} </span></h2>
+
+
+  <div id="selectors" class="shift">
+    <table  style="transform: scale(1)">
+      <!--      <thead>-->
+      <!--      <tr>-->
+      <!--        <th colspan="3">  &lt;!&ndash;Main header&ndash;&gt;-->
+      <!--Selectors-->
+      <!--        </th>-->
+      <!--      </tr>-->
+      <!--      </thead>-->
+
+      <tbody>
+      <tr>
+          <th class="pink"  colspan="1"> <!--Column Header 1-->
+              Property
+          </th>
+          <th class="pink" colspan="2"> <!--Column Header 1-->
+              Possible values
+          </th>
+          <th class="pink" colspan="1"> <!--Column Header 1-->
+              Demo
+          </th>
+      </tr>
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              z-index:
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>any integer</span> -Sets how far back/forward an element will appear</li>
+              </ul>
+          <td colspan="1"><!--values-->
+              <div style="z-index: 10; height: 5em; width: 50%; position: relative">z-index: 3</div>
+              <div style="z-index: 1; height: 5em; width: 50%; background-color: red; position: relative; top: -1em; left: 1em; padding: 2em 0 0 0; box-sizing: border-box">z-index: 1</div>
+          </td>
+
+      </tr>
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              position:
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>sticky</span> -Sticks to the top of the nearest block-level ancestor</li>
+                  <br><li><span>fixed</span> -Removed from flow and positioned to initial containing block</li>
+                  <br><li><span>relative</span> -Stays in flow, positioned based on "top", "right" etc</li>
+                  <br><li><span>absolute</span> -Removed from flow, positioned relative to nearest <strong>POSITIONED</strong> ancestor, based on "top", "right" etc</li>
+                  <br><li><span>static</span> -Positioned based on normal flow.. "top", "right" values are ignored</li>
+              </ul>
+          <td colspan="1"><!--values-->
+          <div style="margin: 1em 0; overflow-y: scroll; overflow-x: hidden; height: 7em; background-color: darkgray; display: block; border: black 5px dotted;">
+              <p style="margin: 0.4em;">Try scrolling down!</p>
+              <span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;">-</span>
+              <span style=" position: sticky; top: 0; box-sizing: border-box; display: inline-block; border:2px yellow dashed ;background-color: red; height: 4em; width: 4em; z-index: 10;">sticky</span>
+              <span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;">-</span>
+              <span style="display: block; background-color: transparent; height: 6em; width: 30%; z-index: 10;"></span>
+          </div>
+
+          <div style=" margin: 1em 0; overflow-y: scroll; overflow-x: hidden; height: 7em; background-color: darkgray; display: block; border: black 5px dotted;">
+              <p style="margin: 0.4em;">Try scrolling down!</p>
+              <span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;">-</span>
+              <span style=" position: fixed; box-sizing: border-box; display: inline-block; border:2px yellow dashed ;background-color: red; height: 4em; width: 4em; z-index: 10;">fixed</span>
+              <span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;">-</span>
+              <span style="display: block; background-color: transparent; height: 6em; width: 30%; z-index: 10;"></span>
+          </div>
+
+          <div style=" margin: 1em 0; overflow-y: scroll; overflow-x: hidden; height: 7em; background-color: darkgray; display: block; border: black 5px dotted;">
+              <p style="margin: 0.4em;">Try scrolling down!</p>
+              <span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;">-<br>-</span>
+              <span style=" position: relative; top: 10px; left: 10px; box-sizing: border-box; display: inline-block; border:2px yellow dashed ;background-color: red; height: 4em; width: 4em; z-index: 10;">
+                  rela<br>tive
+              </span>
+              <span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;">-<br>-</span>
+              <br><br><span>position: relative; top: 10px; left: 10px;</span>
+              <span style="display: block; background-color: transparent; height: 6em; width: 30%; z-index: 10;"></span>
+          </div>
+
+          <div style="margin: 1em 0; overflow-y: scroll; overflow-x: hidden; height: 7em; background-color: darkgray; display: block; border: black 5px dotted; position: relative">
+              <p style="margin: 0.4em;">Try scrolling down!</p>
+              <span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;">-</span>
+              <span style=" position: absolute; box-sizing: border-box; display: inline-block; border:2px yellow dashed ;background-color: red; height: 4em; width: 4em; z-index: 13;">abso<br>lute</span>
+              <span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;">-</span>
+              <span style="display: block; background-color: transparent; height: 6em; width: 30%; z-index: 10;"></span>
+          </div>
+
+          <div style="margin: 1em 0; overflow-y: scroll; overflow-x: hidden; height: 7em; background-color: darkgray; display: block; border: black 5px dotted;">
+              <p style="margin: 0.4em;">Try scrolling down!</p>
+              <span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;">-</span>
+              <span style=" position: static; top: 0; box-sizing: border-box; display: inline-block; border:2px yellow dashed ;background-color: red; height: 4em; width: 4em; z-index: 10;">static</span>
+              <span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;">-</span>
+              <span style="display: block; background-color: transparent; height: 6em; width: 30%; z-index: 10;"></span>
+          </div>
+
+      </td>
+
+      </tr>
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              Display:
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>block</span> -object will take the line for itself</li>
+                  <li><span>inline</span> -object will continue on same line</li>
+                  <li><span>inline-block</span> -same as inline, but u can set dimensions</li>
+                  <li><span>-flex/ inline-flex/ grid</span> -to be covered later</li>
+              </ul>
+          <td colspan="1"><!--values-->
+              <div style="margin: 1em 0; overflow-y: scroll; overflow-x: hidden; height: 7em; background-color: darkgray; display: block; border: black 5px dotted;">
+                  <span>block elements:</span>
+                  <br><span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;"></span>
+                  <br><span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;"></span>
+                  <br><span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;"></span>
+              </div>
+              <div style="margin: 1em 0; overflow-y: scroll; overflow-x: hidden; height: 7em; background-color: darkgray; display: block; border: black 5px dotted;">
+                  <span style="display: block">inline elements:</span>
+                  <br>
+                  <span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;"></span>
+                  <span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;"></span>
+                  <span style="display: inline-block; background-color: blue; height: 4em; width: 30%; z-index: 10;"></span>
+              </div>
+
+          </td>
+
+      </tr>
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              Float:
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>left</span> -object will float to the left</li><br>
+                  <li><span>right</span> -object will float to the right</li><br>
+                  <li><span>inline-start</span> -object float to the start of the text (left with ltr & and right with rtl text)</li><br>
+                  <li><span>inline-end</span> -object float to the end of the text (right with ltr text & left with rtl text)</li><br>
+              </ul>
+              <span class="hightlight">Float removes the element from the website flow, and the width must be specified or else it will assume the full width of containing element</span>
+          <td colspan="1"><!--values-->
+              <div style="width: 5em;border-radius: 1em; height: 5em; float: left; padding: 1em; box-sizing: border-box"> float<br> left</div>
+              <div style="width: 5em;border-radius: 1em; height: 5em; float: right; padding: 1em; box-sizing: border-box; background-color: red;"> float<br> right</div>
+
+          </td>
+
+      </tr>
+      <tr>
+          <th colspan="1"> <!--Item name-->
+              Clear:
+          </th>
+          <td colspan="2"><!--Code-->
+              <ul>
+                  <li><span>left</span> -treats floated elements from left side like block elements</li><br>
+                  <li><span>right</span> -treats floated elements from right side like block elements</li><br>
+                  <li><span>both</span> -treats floated elements from both side like block elements</li>
+              </ul>
+          <td colspan="1"><!--values-->
+          <div style="background-color: rgba(255,255,255, 0.2); border-radius: 1em; text-align: center; text-decoration: none">
+          <strong>clear: none;</strong>
+          <div style="margin: 1em 0; overflow-y: scroll; overflow-x: hidden; height: 10em; background-color: transparent; display: block; border: white 3px dotted; padding: 0.5em;">
+
+              <div style="width: 5em;border-radius: 1em; height: 6em; float: left; padding: 1.5em 1em; box-sizing: border-box"> float<br> left</div>
+              <div style="width: 5em;border-radius: 1em; height: 4em; float: right; padding: 0.5em; box-sizing: border-box; background-color: red;"> float<br> right</div>
+
+              <em>As much mud in the streets as if the waters had but newly retired from the face of the earth, and it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.</em>
+          </div>
+          </div>
+          <div style="background-color: rgba(255,255,255, 0.2); border-radius: 1em; text-align: center; text-decoration: none">
+          <strong>clear: right;</strong>
+          <div style="margin: 1em 0; overflow-y: scroll; overflow-x: hidden; height: 10em; background-color: transparent; display: block; border: white 3px dotted; padding: 0.5em;">
+
+              <div style="width: 5em;border-radius: 1em; height: 6em; float: left; padding: 1.5em 1em; box-sizing: border-box"> float<br> left</div>
+              <div style="width: 5em;border-radius: 1em; height: 4em; float: right; padding: 0.5em; box-sizing: border-box; background-color: red;"> float<br> right</div>
+
+              <em style="clear:right; display: block;">As much mud in the streets as if the waters had but newly retired from the face of the earth, and it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.</em>
+          </div>
+
+          </div>
+          <div style="background-color: rgba(255,255,255, 0.2); border-radius: 1em; text-align: center; text-decoration: none">
+          <strong>clear: left;</strong>
+          <div style="margin: 1em 0; overflow-y: scroll; overflow-x: hidden; height: 10em; background-color: transparent; display: block; border: white 3px dotted; padding: 0.5em;">
+
+              <div style="width: 5em;border-radius: 1em; height: 6em; float: left; padding: 1.5em 1em; box-sizing: border-box"> float<br> left</div>
+              <div style="width: 5em;border-radius: 1em; height: 4em; float: right; padding: 0.5em; box-sizing: border-box; background-color: red;"> float<br> right</div>
+
+              <em style="clear:left; display: block;">As much mud in the streets as if the waters had but newly retired from the face of the earth, and it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.</em>
+          </div>
+          </div>
+          </td>
+
+      </tr>
+
+
+      </tbody>
+    </table>
+  </div>
+
+</main>
+</body>
+</html>

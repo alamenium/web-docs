@@ -1,6 +1,6 @@
 const evilButton = document.getElementById('evil-btn')
 const yayButton = document.getElementById('yay-btn')
-const OFFSET = 40
+const OFFSET = 100
 
 evilButton.addEventListener('click', () => {
     alert('Nice Try')

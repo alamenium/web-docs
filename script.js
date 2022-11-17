@@ -1,14 +1,16 @@
 const evilButton = document.getElementById('evil-btn')
 const yayButton = document.getElementById('yay-btn')
 const OFFSET = 40
+var allowed = false;
 
 evilButton.addEventListener('click', () => {
     alert('Nice Try')
     window.close()
 })
 yayButton.addEventListener('click', () => {
-    alert('THANK YOU!! anyways.. Ahmeds lawyers will be in touch soon')
-})
+    if(allowed) {
+        alert('THANK YOU!! anyways.. Ahmeds lawyers will be in touch soon')
+    }})
 
 document.addEventListener('mousemove', (e) => {
     const x = e.pageX
@@ -19,6 +21,7 @@ document.addEventListener('mousemove', (e) => {
     const horizontalOffset = buttonBox.width / 2 + OFFSET
     const verticalOffset = buttonBox.height / 2 + OFFSET
     if (Math.abs(horizontalDistanceFrom) <= horizontalOffset && Math.abs(verticalDistanceFrom) <= verticalOffset) {
+        allowed = true;
         setButtonPosition(
             buttonBox.x + horizontalOffset / horizontalDistanceFrom * 10,
             buttonBox.y + verticalOffset / verticalDistanceFrom * 10

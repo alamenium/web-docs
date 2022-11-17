@@ -4,7 +4,6 @@ const OFFSET = 40
 
 evilButton.addEventListener('click', () => {
     alert('Nice Try')
-    window.close()
 })
 yayButton.addEventListener('click', () => {
     alert('THANK YOU!! anyways.. Ahmeds lawyers will be in touch soon')

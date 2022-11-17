@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AlaSite</title>
+    <script defer src="script.js"></script>
+    <style>
+        body{
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #evil-btn, #yay-btn{
+            position: absolute;
+            white-space: nowrap;
+            font-size: 2rem;
+            margin: auto auto;
+            font-family: Helvetica;
+            display: block;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="font-family: Helvetica; text-align: center">Vote Alamenium for CPES president?</h1>
+<div class="container">
+<img src ="cat-begging.gif" style="width: 400px; display: block">
+
+</div>
+<h1 style="font-family: Helvetica; text-align: center; display: block">Click below to decline..</h1>
+
+<div class="container">
+
+    <button id="yay-btn">I APPROVE</button>
+    <button id="evil-btn">I DECLINE.. </button>
+</div>
+</body>
+</html>
